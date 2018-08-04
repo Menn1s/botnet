@@ -32,6 +32,7 @@ class Bot:
 def command_bots(command):
     for bot in botnet:
         attack = bot.send_command(command)
+    for bot in botnet:
         print('Output from ' + bot.host)
         print(attack)
 
@@ -70,9 +71,5 @@ while isDone == False:
 	if response == 'y' or 'Y':
 		continue
 	else:
-		break	
-	
-
-    
-        
-        
+        isDone= True
+		break
