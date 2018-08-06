@@ -70,6 +70,6 @@ while isDone == False:
 	print("Would you like to send another command?[y/n]")
 	response=raw_input()
 	if response == 'n':
-		isDone = True
-    else:
-        isDone = False
+            isDone = True
+	else:
+            isDone = False
