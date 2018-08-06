@@ -54,6 +54,9 @@ add_bot('192.168.1.21', 'root', 'cpp')
 add_bot('192.168.1.22', 'root', 'cpp')
 add_bot('192.168.1.23', 'root', 'cpp')
 add_bot('192.168.1.24', 'root', 'cpp')
+add_bot('192.168.1.30', 'root', 'cpp')
+add_bot('192.168.1.29', 'root', 'cpp')
+add_bot('192.168.1.32', 'root', 'cpp')
 
 # list user home directory
 #command_bots('git clone https://github.com/sweetsoftware/Ares.git')
