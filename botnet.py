@@ -69,5 +69,7 @@ while isDone == False:
 	command_bots(command)
 	print("Would you like to send another command?[y/n]")
 	response=raw_input()
-	if response == 'n' or 'N':
-		isDone == True
+	if response == 'n':
+		isDone = True
+    else:
+        isDone = False
